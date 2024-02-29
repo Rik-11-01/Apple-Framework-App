@@ -11,17 +11,19 @@ struct FrameworkGridView: View {
     
     let columns: [GridItem]=[GridItem(.flexible()),
                              GridItem(.flexible()),
-                             GridItem(.flexible())
+                             GridItem(.flexible()),
     ]
     
     var body: some View {
-        LazyVGrid(columns:columns){
-            Frameworktitleview(imagename: "arkit", name: "Arkit")
-            Frameworktitleview(imagename: "arkit", name: "Arkit")
-            Frameworktitleview(imagename: "arkit", name: "Arkit")
-            Frameworktitleview(imagename: "arkit", name: "Arkit")
-            Frameworktitleview(imagename: "arkit", name: "Arkit")
-            Frameworktitleview(imagename: "arkit", name: "Arkit")
+        NavigationView{
+            ScrollView{
+                LazyVGrid(columns:columns){
+                    ForEach(MockData.frameworks){ frameworks in
+                        Frameworktitleview(framework: frameworks)
+                    }
+                }
+            }
+            .navigationTitle("🍎 Frameworks")
         }
 
     }
@@ -33,20 +35,20 @@ struct FrameworkGridView: View {
 }
 
 struct Frameworktitleview: View{
-    let imagename:String
-    let name:String
+    let framework:Framework
     
     var body :some View{
         VStack{
-            Image(imagename)
+            Image(framework.imageName)
                 .resizable()
                 .frame(width: 90, height: 90)
-            Text(name)
+            Text(framework.name)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
         }
+        .padding()
     }
     
 }
