@@ -13,6 +13,7 @@
 		1B85DC032B901479004B1D44 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B85DC022B901479004B1D44 /* Framework.swift */; };
 		1B85DC052B9016A3004B1D44 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B85DC042B9016A3004B1D44 /* FrameworkGridView.swift */; };
 		1BD2D9CC2B92B3FD004B876F /* frameworkdetailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD2D9CB2B92B3FD004B876F /* frameworkdetailview.swift */; };
+		1BD2D9D22B943194004B876F /* frameworkgridviewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD2D9D12B943194004B876F /* frameworkgridviewmodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		1B85DC022B901479004B1D44 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		1B85DC042B9016A3004B1D44 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		1BD2D9CB2B92B3FD004B876F /* frameworkdetailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkdetailview.swift; sourceTree = "<group>"; };
+		1BD2D9D12B943194004B876F /* frameworkgridviewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkgridviewmodel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				1B85DBF42B8F905E004B1D44 /* Apple_FrameworkApp.swift */,
 				1B85DC042B9016A3004B1D44 /* FrameworkGridView.swift */,
 				1BD2D9CB2B92B3FD004B876F /* frameworkdetailview.swift */,
+				1BD2D9D12B943194004B876F /* frameworkgridviewmodel.swift */,
 				1B85DC022B901479004B1D44 /* Framework.swift */,
 				1B85DBF82B8F9060004B1D44 /* Assets.xcassets */,
 				1B85DBFA2B8F9060004B1D44 /* Preview Content */,
@@ -147,6 +150,7 @@
 				1B85DC052B9016A3004B1D44 /* FrameworkGridView.swift in Sources */,
 				1B85DC032B901479004B1D44 /* Framework.swift in Sources */,
 				1B85DBF52B8F905E004B1D44 /* Apple_FrameworkApp.swift in Sources */,
+				1BD2D9D22B943194004B876F /* frameworkgridviewmodel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
