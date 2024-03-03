@@ -11,6 +11,8 @@ struct frameworkdetailview: View {
     var framework:Framework
     @Binding var isshowingdetailview:Bool
     
+    @State private var isShowingSafariView = false
+    
     var body: some View {
         VStack{
             HStack{
@@ -34,7 +36,7 @@ struct frameworkdetailview: View {
                 .padding()
             Spacer()
             Button{
-                
+                isShowingSafariView = true
             }label: {
                 Text("Learn More")
                     .font(.title2)
@@ -45,6 +47,9 @@ struct frameworkdetailview: View {
                     .cornerRadius(10)
             }
         }
+        .sheet(isPresented:$isShowingSafariView , content: {
+            SafariView(url: URL(string: framework.urlString) ?? URL(string:"www.apple.com")!)
+        })
     }
 }
 
