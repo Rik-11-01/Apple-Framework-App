@@ -10,9 +10,7 @@ import SwiftUI
 
 final class FrameWorkGridViewModel:ObservableObject{
     var selectedframework: Framework?{
-        didSet{
-            ishowingdetailview=true
-        }
+        didSet{ ishowingdetailview=true }
     }
     
     
